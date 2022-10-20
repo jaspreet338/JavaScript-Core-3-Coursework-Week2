@@ -5,7 +5,7 @@ buttonEl.addEventListener("click", () => {
         if(response.status >= 200 && response.status <= 299) {
             return response.json();
         } else {
-            throw new error(`Encountered error: ${response.status} ${response.statusText}`);
+            throw new error(`Encountered something unexpected: ${response.status} ${response.statusText}`);
         }
     })
     .then((data) => {
