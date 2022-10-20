@@ -10,7 +10,7 @@ buttonEl.addEventListener("click", () => {
     })
     .then((data) => {
         const image = `<img src="${data.message}"/>`;
-        document.getElementById("list").innerHTML="<li>"+image+"</li>"
+        document.getElementById("imglist").innerHTML="<li>"+image+"</li>"
     })
 })
 .catch((error) => {
